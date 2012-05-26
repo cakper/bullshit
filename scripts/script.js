@@ -1,7 +1,7 @@
 function updateCounter() {
 
 		var counter;
-		if(localStorage) {
+		if(!isNaN(counter)) {
 			counter = parseInt(localStorage["counter"]);
 			if(typeof counter !== NaN){
 				counter++;
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	var counter;
 	if(localStorage) {
 		counter = parseInt(localStorage["counter"]);
-		if(typeof counter !== NaN){
+		if(!isNaN(counter)){
 			$('#count').html(counter);
 		}
 	}
