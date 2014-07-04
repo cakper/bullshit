@@ -21,6 +21,26 @@ function updateCounter() {
 		} else {
 			$('#s').show();
 		}
+
+		var ಠ_ಠ = $('#emoticon');
+
+		if(counter > 5) {
+			ಠ_ಠ.html(':/');
+		}
+
+		if(counter > 10) {
+			ಠ_ಠ.html('>:(');
+		}
+
+		if(counter > 15) {
+			ಠ_ಠ.html('ಠ_ಠ');
+		}
+
+		if(counter > 20) {
+			ಠ_ಠ.html('<br />' + '(╯°□°）╯︵ ┻━┻').css('color', 'red');
+			$('#s').html('s!!1!!one!');
+		}
+
 }
 
 $(document).ready(function() {
